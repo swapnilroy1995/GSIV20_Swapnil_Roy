@@ -49,11 +49,11 @@ This app has two screens
 
 ## Challenges in the project
 	
-	Maintaining a list of infinite scroll which involves list from two different functionalities(upcoming movie list , search movie 	list) in one screen and render, update and delete which is required when it is required.
+	Maintaining a list of infinite scroll which involves list from two different functionalities(upcoming movie list , search movie list) in one screen and render, update and delete which is required when it is required.
 	
 	Using Redux state management system helped a lot which allowed to maintain the state and the list when required.
 	
-	Making things seem seemless is a part of project quality and achieving it through Redux does take some proficiency and skill to 	implement.
+	Making things seem seemless is a part of project quality and achieving it through Redux does take some proficiency and skill to implement.
 	
 
 ## More to be done if 4 more hours are available
