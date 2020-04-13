@@ -46,6 +46,8 @@ export default class MovieCard extends PureComponent{
 						  
 				  </View>
 				  <Text 
+				  
+				  
 					numberOfLines={windowWidth>400?3:2}
 					style={styles.movieDescText}
 				  >

@@ -61,7 +61,7 @@ class ListPage extends PureComponent{
 									:
 						<View style={styles.container}>
 						<View style={styles.searchBarContainerStyle}>
-						 <TextInput
+						 <TextInput  
 							style={styles.searchBarStyle}
 							maxLength={30}
 							onChangeText={text => {
