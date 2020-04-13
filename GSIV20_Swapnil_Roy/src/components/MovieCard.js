@@ -31,7 +31,12 @@ export default class MovieCard extends PureComponent{
 							  </View>
 					}
 				  <View style={styles.movieTitleContainer}>
-						  <Text style={[styles.movieTitleText,{color:'#4285f4', fontSize: 15, fontWeight: '700', width:'80%'}]} numberOfLines={1}>{movieDetails.original_title}</Text>
+						  <Text 
+							  style={[styles.movieTitleText,{color:'#4285f4', fontSize: 15, fontWeight: '700', width:'80%'}]} 
+							  numberOfLines={1}
+						  >
+								{movieDetails.original_title}
+						  </Text>
 						  {
 							this.props.movieList.vote_average!==null?
 								  <Text style={styles.movieTitleText}> ({this.props.movieList.vote_average})</Text>
@@ -41,7 +46,7 @@ export default class MovieCard extends PureComponent{
 						  
 				  </View>
 				  <Text 
-					numberOfLines={3}
+					numberOfLines={windowWidth>400?3:2}
 					style={styles.movieDescText}
 				  >
 							{movieDetails.overview}

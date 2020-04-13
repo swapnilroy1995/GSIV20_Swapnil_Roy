@@ -26,24 +26,19 @@ const movieDetailsReducer=(state=initialState, action)=>{
             return{...state, loading:false, details:[]}
         }
         case FETCH_MOVIE_LIST:{
-		console.log('loading true');
-		
             return{...state,loading:true}
         }
         case FETCH_MOVIE_LIST_SUCCESS:{
 		
 		 if(action.search=== false){
-		 console.log('inside movie list',action.search);
-					for(let i in action.list.results){
+				for(let i in action.list.results){
 						state.moviesList.push(action.list.results[i]);
 				}
 				return{...state,loading:false, list:action.list, results:state.moviesList, searchMode:false, searchResults:[]}
 			}
 			
 			if(action.search && action.page>1){
-			
-		 console.log('inside seacrh list 2', action.search);
-						for(let i in action.list.results){
+					for(let i in action.list.results){
 						
 						state.searchResults.push(action.list.results[i]);
 				}

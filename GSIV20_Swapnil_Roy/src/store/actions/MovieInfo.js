@@ -38,8 +38,7 @@ export const movieDetails=(id, unmount)=>{
 };
 
 export const movieList=(page)=>{
-    console.log('inside action',page);
-    return async dispatch=>{
+	return async dispatch=>{
         dispatch({
             type:FETCH_MOVIE_LIST,
         });

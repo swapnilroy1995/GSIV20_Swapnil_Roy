@@ -24,8 +24,7 @@ class ListPage extends PureComponent{
 	
 	
 	  static getDerivedStateFromProps(props, state) {
-	  console.log('inside getDerivedStateFromProps',state, 'page' ,props.list.page, 'searchMode',props.searchMode, 'loading',props.loading);
-			if (
+	  if (
 			  props.list.page === state.nextMovieListPage &&
 			  !state.searchMode
 			) {
@@ -63,6 +62,7 @@ class ListPage extends PureComponent{
 						<View style={styles.container}>
 						<View style={styles.searchBarContainerStyle}>
 						 <TextInput
+						 testID={'SearchMovies'}
 							style={styles.searchBarStyle}
 							maxLength={30}
 							onChangeText={text => {
@@ -99,14 +99,14 @@ class ListPage extends PureComponent{
 								  keyExtractor={(item)=>item.id}
 								  extraData={this.props.results}
 								  numColumns={2}
-								  onEndReachedThreshold={.5}
+								  onEndReachedThreshold={.3}
 								  keyboardShouldPersistTaps={'never'}
 								  keyboardDismissMode={'on-drag'}
 								  onEndReached={()=>{
 								  
 								  if(this.state.searchMode){
 								 	this.props.searchMovie(this.state.searchMovieListPage,this.state.searchInput);
-									this.setDtate({searchMovieListPage:this.state.searchMovieListPage+1})
+									this.setState({searchMovieListPage:this.state.searchMovieListPage+1})
 										return true;
 										}	
 								  this.props.movieList(this.state.nextMovieListPage)
