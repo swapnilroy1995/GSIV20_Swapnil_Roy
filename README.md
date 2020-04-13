@@ -35,7 +35,7 @@ $ react-native run-android
 
 This app has two screens 
 
-	1	 Movies list screen where you can scroll through all the upcoming movies infinitely and search for any movie on your mind.
+	1.	 Movies list screen where you can scroll through all the upcoming movies infinitely and search for any movie on your mind.
 			a. The list automatically updates the list and lets you scroll infinitely.
 			
 			b. The search feature aotumatically search for the text entered on every keystroke and on deleting all the text 			   bring back the list of upcoming movies rendered initially.
