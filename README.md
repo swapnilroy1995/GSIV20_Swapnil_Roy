@@ -34,10 +34,14 @@ $ react-native run-android
 ## About the project
 
 This app has two screens 
-	1	 Movies list screen where you can scroll through all the upcoming movies infinitely and search for any movie on your mind.
+
+	1.	 Movies list screen where you can scroll through all the upcoming movies infinitely and search for any movie on your mind.
 			a. The list automatically updates the list and lets you scroll infinitely.
-			b. The search feature aotumatically search for the text entered on every keystroke and on deleting all the text bring back the list of upcoming movies rendered initially.
-			c. There is a Cross icon in the Searhbar which allows the user to delete the text and bring back the upcoming movies list instantly.
+			
+			b. The search feature aotumatically search for the text entered on every keystroke and on deleting all the text 			   bring back the list of upcoming movies rendered initially.
+			
+			c. There is a Cross icon in the Searhbar which allows the user to delete the text and bring back the upcoming movies 				list instantly.
+			
 			d. Clicking on the Movie cards will take you to the Movie Details screen.
 			
 	2. Movie Details Shows all the info available about the movie made available through apis from themoviedb.org.
@@ -46,7 +50,9 @@ This app has two screens
 ## Challenges in the project
 	
 	Maintaining a list of infinite scroll which involves list from two different functionalities(upcoming movie list , search movie list) in one screen and render, update and delete which is required when it is required.
+	
 	Using Redux state management system helped a lot which allowed to maintain the state and the list when required.
+	
 	Making things seem seemless is a part of project quality and achieving it through Redux does take some proficiency and skill to implement.
 	
 
